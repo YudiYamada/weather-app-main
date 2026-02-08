@@ -1,8 +1,8 @@
 import { useState } from "react";
-import IconUnits from "/icon-units.svg";
-import IconDropdown from "/icon-dropdown.svg";
-import DropdownGroup from "./dropdown-group";
-import DropdownItem from "./dropdown-item";
+import IconUnits from "../assets/icon-units.svg";
+import IconDropdown from "../assets/icon-dropdown.svg";
+import DropdownGroup from "../components/dropdown-group";
+import DropdownItem from "../components/dropdown-item";
 
 const UnitsDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);

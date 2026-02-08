@@ -1,4 +1,4 @@
-import IconCheckMark from "/icon-checkmark.svg";
+import IconCheckMark from "../assets/icon-checkmark.svg";
 
 interface DropdownItemProps {
   label: string;
