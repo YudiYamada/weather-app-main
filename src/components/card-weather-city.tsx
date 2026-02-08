@@ -15,7 +15,7 @@ import TodayLargeBackGround from "../assets/bg-today-large.svg";
 }
 import IconSun from "/images/icon-sunny.webp";
 
-const CardWeatherCIty = () => {
+const CardWeatherCity = () => {
   return (
     <div
       className="relative mx-auto grid max-w-250 items-center justify-items-center"
@@ -54,4 +54,4 @@ const CardWeatherCIty = () => {
   );
 };
 
-export default CardWeatherCIty;
+export default CardWeatherCity;
