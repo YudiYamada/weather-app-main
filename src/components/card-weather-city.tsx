@@ -23,7 +23,7 @@ const CardWeatherCity = () => {
     >
       {/* Imagem de Fundo */}
       <picture className="col-start-1 row-start-1 w-full">
-        <source media="(min-width: 1024px)" srcSet={TodayLargeBackGround} />
+        <source media="(min-width: 650px)" srcSet={TodayLargeBackGround} />
         <img
           src={TodaySmallBackGround}
           alt="Background"
@@ -32,13 +32,15 @@ const CardWeatherCity = () => {
       </picture>
 
       {/* Conteúdo sobreposto */}
-      <div className="z-1 col-start-1 row-start-1 p-5 text-center text-white">
-        <h2 id="weather-city-title" className="m-0 text-2xl">
-          Berlin, Germany
-        </h2>
-        <time dateTime="2025-08-5" className="opacity-80">
-          Tuesday, Aug 5, 2025
-        </time>
+      <div className="z-1 col-start-1 row-start-1 w-full p-5 text-center text-white lg:flex lg:items-center lg:justify-between">
+        <div>
+          <h2 id="weather-city-title" className="m-0 text-2xl">
+            Berlin, Germany
+          </h2>
+          <time dateTime="2025-08-5" className="opacity-80">
+            Tuesday, Aug 5, 2025
+          </time>
+        </div>
 
         {/* Container do Ícone + Temperatura */}
         <div className="mt-2.5 flex items-center justify-center gap-2.5">
@@ -47,7 +49,7 @@ const CardWeatherCity = () => {
             alt="Sun Icon"
             className="h-37.5 w-37.5 object-contain"
           />
-          <span className="text-8xl font-bold">68º</span>
+          <span className="text-7xl sm:text-8xl font-bold">68º</span>
         </div>
       </div>
     </div>

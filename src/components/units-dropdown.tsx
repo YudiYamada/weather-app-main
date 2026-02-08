@@ -15,7 +15,7 @@ const UnitsDropdown = () => {
       {/* Botão Gatilho */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-neutral-0 flex items-center gap-2 rounded-md bg-neutral-600 p-2.5 transition-all hover:bg-neutral-700 active:scale-95"
+        className="text-neutral-0 flex items-center gap-2 rounded-md bg-neutral-600 p-2.5 transition-all hover:cursor-pointer active:scale-95"
       >
         <img src={IconUnits} alt="" className="w-5" />
         <span className="text-sm font-medium">Units</span>
@@ -29,7 +29,7 @@ const UnitsDropdown = () => {
       {/* Menu Flutuante */}
       {isOpen && (
         <div className="absolute right-0 z-50 mt-5 w-64 origin-top-right rounded-xl border border-neutral-700 bg-neutral-800 p-2 shadow-2xl">
-          <button className="text-neutral-0 mb-2 w-full rounded-lg p-3 text-left text-sm transition-colors hover:bg-neutral-700">
+          <button className="text-neutral-0 mb-2 w-full rounded-lg p-3 text-left text-sm transition-colors hover:cursor-pointer hover:bg-neutral-700">
             Switch to Imperial
           </button>
 

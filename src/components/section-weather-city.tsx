@@ -3,9 +3,9 @@ import CardWeatherCity from "./card-weather-city";
 
 const SectionWeatherCity = () => {
   return (
-    <section className="mt-8">
+    <section>
       <CardWeatherCity />
-      <div className="mt-6 grid grid-cols-2 gap-4">
+      <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
         <CardAtmosphericData title="Feels Like" value="64º" />
         <CardAtmosphericData title="Humidity" value="46%" />
         <CardAtmosphericData title="Wind" value="9 mph" />

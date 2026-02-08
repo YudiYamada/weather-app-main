@@ -10,12 +10,10 @@ const DropdownItem = ({ label, isActive, onClick }: DropdownItemProps) => {
   return (
     <button
       onClick={onClick}
-      className={`flex w-full items-center justify-between rounded-lg p-3 text-sm transition-colors ${isActive ? "text-neutral-0 bg-neutral-700" : "text-neutral-300 hover:bg-neutral-700/50"}`}
+      className={`flex w-full items-center justify-between rounded-lg p-3 text-sm transition-colors hover:cursor-pointer ${isActive ? "text-neutral-0 bg-neutral-700" : "text-neutral-300 hover:bg-neutral-700/50"}`}
     >
       <span>{label}</span>
-      {isActive && (
-        <img src={IconCheckMark} alt="Icon Check Mark" />
-      )}
+      {isActive && <img src={IconCheckMark} alt="Icon Check Mark" />}
     </button>
   );
 };

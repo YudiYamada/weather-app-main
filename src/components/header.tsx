@@ -6,7 +6,7 @@ import Button from "./button";
 
 const Header = () => {
   return (
-    <header className="w-full">
+    <header className="max-w-7xl mx-auto">
       <div className="flex items-center justify-between">
         <div>
           <img src={Logo} alt="Logo of Web Site" />
@@ -16,11 +16,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="mt-10 flex flex-col items-center">
+      <div className="mt-3 flex flex-col items-center">
         <div>
           <h1 className="text-center text-5xl">How's the sky looking today?</h1>
         </div>
-        <div className="mt-10 flex flex-col gap-4 w-full">
+        <div className="mt-10 flex flex-col gap-4 w-full md:flex-row md:w-150">
           <Input icon={IconSearch} type="text" placeholder="Search for a place..." />
           <Button>Search</Button>
         </div>

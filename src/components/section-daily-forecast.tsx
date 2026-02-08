@@ -1,7 +1,6 @@
 import CardDailyForecast from "./card-daily-forecast";
 import IconRain from "/images/icon-rain.webp";
 
-
 const SectionDailyForecast = () => {
   return (
     <section className="mt-8">

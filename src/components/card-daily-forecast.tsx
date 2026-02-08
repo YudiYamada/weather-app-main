@@ -14,10 +14,10 @@ const CardDailyForecast = ({
   temp2,
 }: CardDailyForecastProps) => {
   return (
-    <div className="flex h-40 w-26 flex-col items-center rounded-xl bg-neutral-600 p-3">
+    <div className="flex h-40 w-26 flex-col flex-wrap items-center rounded-xl bg-neutral-600 p-3">
       <span>{day}</span>
       <img src={icon} alt={icondescription} />
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between">
         <span>{temp1}</span>
         <span>{temp2}</span>
       </div>

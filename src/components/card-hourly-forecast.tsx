@@ -12,7 +12,7 @@ const CardHourlyForecast = ({
   temperature,
 }: CardHourlyForecastProps) => {
   return (
-    <div className="flex w-full max-w-xs items-center justify-between rounded-xl border border-white/10 px-4 py-3">
+    <div className="flex w-full items-center justify-between rounded-xl border border-white/10 px-4 py-3">
       <div className="flex items-center gap-4">
         <img
           src={icon}
