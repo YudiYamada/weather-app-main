@@ -7,9 +7,17 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   type: string;
   icon?: string;
   suggestions?: string[];
+  onSuggestionClick?: (city: string) => void;
 }
 
-const Input = ({ placeholder, type, icon, suggestions = [], ...rest }: InputProps) => {
+const Input = ({
+  placeholder,
+  type,
+  icon,
+  suggestions = [],
+  onSuggestionClick,
+  ...rest
+}: InputProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -38,7 +46,12 @@ const Input = ({ placeholder, type, icon, suggestions = [], ...rest }: InputProp
                 key={city}
                 label={city}
                 isActive={false}
-                onClick={() => {}}
+                onClick={() => {
+                  if (onSuggestionClick) {
+                    onSuggestionClick(city);
+                    setOpen(false);
+                  }
+                }}
               />
             ))}
           </DropdownGroup>

@@ -8,12 +8,20 @@ export interface WeatherData {
     feelsLike: number;
     isDay: number;
     code: number;
+    precipitation: number;
   };
   daily: {
     time: string[];
     temperature_2m_max: number[];
     temperature_2m_min: number[];
     weather_code: number[];
+    precipitation_sum: number[];
+  };
+  hourly: {
+    time: string[];
+    temperature_2m: number[];
+    weather_code: number[];
+    is_day: number[];
   };
 }
 
