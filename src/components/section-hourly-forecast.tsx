@@ -1,5 +1,5 @@
 import CardHourlyForecast from "./card-hourly-forecast";
-import UnitsDropdown from "./units-dropdown";
+import DropdownDay from "./dropdown-day";
 
 import IconSunny from "/images/icon-sunny.webp";
 
@@ -8,7 +8,7 @@ const SectionHourlyForecast = () => {
     <section className="rounded-xl bg-neutral-600 p-5">
       <div className="flex justify-between items-center">
         <h5>Hourly forecast</h5>
-        <UnitsDropdown />
+        <DropdownDay />
       </div>
       
       <div className="flex flex-col items-center space-y-5 mt-3 overflow-y-auto h-172">
