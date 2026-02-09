@@ -1,0 +1,8 @@
+interface ImportMetaEnv {
+  readonly VITE_GEO_API_URL: string;
+  readonly VITE_WEATHER_API_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
